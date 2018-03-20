@@ -4,7 +4,7 @@
   gather_facts: no
   tasks:
 
-    - name: configure Arista interface E1 settings
+    - name: configure Arista interface settings
       eos_config:
         src: interfaces.j2
         defaults: yes
