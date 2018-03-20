@@ -1,0 +1,7 @@
+{% for intf_num in range(1, 4) %}
+interface Ethernet{{ intf_num }}
+   description my test interfaces
+   spanning-tree portfast
+   switchport access vlan 22
+   switchport mode access
+{% endfor %}

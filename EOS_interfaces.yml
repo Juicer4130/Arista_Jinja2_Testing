@@ -1,0 +1,11 @@
+---
+- name: Arista interface settings for vEOS-2
+  hosts: veos-2
+  gather_facts: no
+  tasks:
+
+    - name: configure Arista interface E1 settings
+      eos_config:
+        src: interfaces.j2
+        defaults: yes
+        provider: "{{ provider_eapi }}"

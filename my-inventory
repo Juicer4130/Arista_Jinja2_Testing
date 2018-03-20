@@ -1,0 +1,19 @@
+
+
+
+[all:vars]
+ansible_connection=local
+#ansible_python_interpreter=/home/kgiusti/VENV/ansible/bin/python
+
+
+
+[arista]
+#veos-1 ansible_host=10.0.255.163
+veos-2 ansible_host=10.0.255.164
+#veos-9 ansible_host=192.168.7.1
+#veos-10 ansible_host=192.168.7.221
+
+[arista:vars]
+eapi_port=443
+username=kgiusti
+password=Br0wnz
