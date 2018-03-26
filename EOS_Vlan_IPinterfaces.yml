@@ -1,0 +1,10 @@
+---
+- name: Simple playbook to test Jinja2 with Vlans
+  hosts: veos-2
+  gather_facts: no
+  tasks:
+
+    - name: Jinja2 testing
+      eos_config:
+        src: vlan_intf.j2
+        provider: "{{ provider_eapi }}"
